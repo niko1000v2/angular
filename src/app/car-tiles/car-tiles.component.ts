@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {CarsService} from '../cars.service';
+import {MessageService} from '../message.service';
 
 @Component({
   selector: 'app-car-tiles',
@@ -8,11 +9,13 @@ import {CarsService} from '../cars.service';
 })
 export class CarTilesComponent implements OnInit {
   private cars: Car[];
-  constructor( private carService: CarsService) {
+  constructor( private carService: CarsService, private messageService: MessageService) {
   }
 
   ngOnInit() {
     this.cars = this.carService.getCars();
+    this.messageService.messageClear();
+    this.messageService.addMessage('Załadowano dane');
 
   }
 

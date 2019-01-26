@@ -35,3 +35,20 @@ header {
   font-size: 60pt;
   margin: 0;
 }
+
+.navbar ul {
+  list-style-type: none;
+  display: inherit;
+  margin: 0;
+  padding: 0;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16pt;
+  padding: 0 15px;
+}
+.navbar a.active {
+  color: #00a6b6;
+}
+

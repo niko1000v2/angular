@@ -1,0 +1,80 @@
+<p>
+  car-list works!
+</p>
+
+
+<div class="wrapper">
+
+  <!-- Mustache.js - szablon nagłówka -->
+  <div id="main-nav"></div>
+
+  <div class="blue-section">
+    <div class="container">
+      <div class="filter">
+        <h1>Filtruj</h1>
+        <form>
+          <div class="checkbox">
+            <div>
+              <div>
+                <label><input type="checkbox" name="wszystkie" value="wszystkie">
+                  Wszystkie
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" name="dostepne" value="dostepne">
+                  Tylko dostępne
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="checkbox" id="wypożyczone" name="wypożyczone" value="wypożyczone">
+                  Tylko wypożyczone
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="gray-section admin-section">
+    <div class="container">
+      <table class="carsTable">
+        <thead>
+        <tr>
+          <th>Auto</th>
+          <th>Liczba miejsc</th>
+          <th>Kaucja</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td{{carName}}</td>
+          <td>{{numberOfSeats}}<</td>
+          <td>{{caution}}</td>
+          <td><a>Usuń</a></td>
+        </tr>
+        <tr>
+          <td class="hover-link">Fiat
+            <img class="hover-img" alt="fiat" src="images/car-2.png"/>
+          </td>
+          <td>2007</td>
+          <td class="inactive">Niedostępne</td>
+          <td><a>Usuń</a></td>
+        </tr>
+        <tr>
+          <td class="hover-link">BMW
+            <img class="hover-img" alt="bmw" src="images/car-3.png"/>
+          </td>
+          <td>2011</td>
+          <td>Dostępne</td>
+          <td><a>Usuń</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+

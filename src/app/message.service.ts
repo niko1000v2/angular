@@ -14,13 +14,17 @@ export class MessageService {
     this.messages = [
       new Message('Witajcie w naszej bajce 1'),
       new Message('Witajcie w naszej bajce 2'),
-      new Message('Witajcie w naszej bajce 3')
+      new Message('Witajcie w naszej bajce 3'),
     ];
   }
 
-  addMessage(): Message[] {
-    return this.messages;
-  }
+  addMessage(text: string) {
+    this.messages.push(new Message(text));
 
+  }
+  messageClear() {
+    this.messages = [];
+
+  }
 
 }

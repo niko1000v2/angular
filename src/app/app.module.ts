@@ -9,6 +9,8 @@ import { CarTilesComponent } from './car-tiles/car-tiles.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { AdminComponentComponent } from './admin-component/admin-component.component';
+import { CarListComponent } from './car-list/car-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MainContentComponent } from './main-content/main-content.component';
     CarTilesComponent,
     HeaderComponent,
     FooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    AdminComponentComponent,
+    CarListComponent
   ],
   imports: [
     BrowserModule,
