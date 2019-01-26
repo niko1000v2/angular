@@ -1,0 +1,37 @@
+header {
+  background: url('/assets/images/header.png');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+}
+.navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand img {
+  max-width: 150px;
+}
+.header-title {
+  text-transform: uppercase;
+  margin-left: 50%;
+  margin-top: 5px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.header-title h1 {
+  color: #fff;
+  font-size: 40pt;
+}
+
+.header-title .alternative-color {
+  color: #d53725;
+}
+.header-title h1 span {
+  color: #00a6b6;
+  font-size: 60pt;
+  margin: 0;
+}

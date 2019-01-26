@@ -1,0 +1,19 @@
+<div class="gray-section">
+  <div class="container">
+    <div class="inline-tile-box">
+
+      <app-car-tile *ngFor="let car of cars"
+                    [carName]="car.carName"
+                    [carPrice]="car.carPrice"
+                    [numberOfSeats]="car.numberOfSeats"
+                    [caution]="car.caution"
+                    [available]="car.available"
+                    [img]="car.img"
+                    [limit]="car.limit"
+      ></app-car-tile>
+
+    </div>
+
+  </div>
+</div>
+
